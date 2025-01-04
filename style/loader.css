@@ -1,0 +1,117 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #c9c9c9, #a3a3a3, #bababa);
+  overflow: hidden;
+}
+
+.ninja-loader {
+  position: relative;
+  text-align: center;
+  animation: fade-in 1.5s ease-out infinite alternate;
+}
+
+.ninja-face {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #333, 0 0 30px #111 inset;
+  margin-bottom: 30px;
+  margin: auto;
+  z-index: 2;
+}
+
+.ninja-mask {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 80%;
+  height: 30%;
+  background: #444;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #444, 0 0 20px #666;
+  z-index: 3;
+}
+
+.ninja-eyes {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.eye {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  animation: eye-blink 3s infinite;
+}
+
+.eye.left {
+  animation-delay: 1s;
+}
+
+.eye.right {
+  animation-delay: 1.5s;
+}
+
+.ninja-sword {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #fff, transparent, #fff);
+  border-radius: 2px;
+  transform: translateX(-50%) rotate(0deg);
+  box-shadow: 0 0 15px #666;
+  animation: sword-spin 1.5s linear infinite;
+}
+
+.loading-message {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaa;
+  text-shadow: 0 0 10px #444, 0 0 20px #666;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes eye-blink {
+  0%, 90% {
+    transform: scaleY(1);
+  }
+  95%, 100% {
+    transform: scaleY(0.2);
+  }
+}
+
+@keyframes sword-spin {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
