@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #c9c9c9, #a3a3a3, #bababa);
+  background: linear-gradient(135deg, #222222, #444444, #666666);
   overflow: hidden;
 }
 
@@ -85,7 +85,7 @@
   margin-top: 20px;
   font-size: 16px;
   font-weight: 500;
-  color: #aaa;
+  color: #fff;
   text-shadow: 0 0 10px #444, 0 0 20px #666;
 }
 

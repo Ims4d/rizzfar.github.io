@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loader.style.display = 'none';
     appContainer.style.display = 'block';
     document.body.style.overflowY = 'auto';
-  }, 2000)
+  }, 3000)
 })
