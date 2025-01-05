@@ -1,4 +1,6 @@
 @import url('./style/loader.css');
+@import url('./style/darkmodeBtn.css');
+@import url('./style/darkmode.css');
 
 * {
   margin: 0;
@@ -14,7 +16,7 @@ body {
 .app-container {
   display: block;
   width: 95%; 
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .profile {
@@ -58,6 +60,7 @@ body {
   margin: 15px 0;
   color: rgb(62, 62, 62);
   font-weight: 300;
+  line-height: 1.6em;
 }
 
 .profile__profile-bio > a {
@@ -87,6 +90,7 @@ body {
   margin-bottom: 20px;
   color: rgb(62, 62, 62);
   font-weight: 300;
+  line-height: 1.6em;
 }
 
 .about-me .about a {
@@ -142,8 +146,9 @@ body {
 
   .profile__profile-bio {
     width: 580px;
-    font-size: 16px;
+    font-size: 15px;
   }
+
 
   .profile__profile-image {
     margin: 0;
@@ -152,6 +157,7 @@ body {
 
   .about-me .about p {
     line-height: 1.6em;
+    font-size: 15px;
   }
 
   .about-me {

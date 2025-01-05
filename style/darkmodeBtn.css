@@ -1,0 +1,24 @@
+.dark-icon {
+  font-size: 1.3em;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s;
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  color: #555;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: #fff;
+}

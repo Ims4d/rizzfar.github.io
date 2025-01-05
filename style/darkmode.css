@@ -1,0 +1,45 @@
+body.dark-mode {
+  background-color: #343434;
+  color: #f5f5f5;
+}
+
+body.dark-mode .profile {
+  border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode .profile__profile-bio > .name > span {
+  background-color: #333;
+  color: #0fd8ff;
+}
+
+body.dark-mode .profile__profile-bio > .description {
+  color: #e0e0e0;
+}
+
+body.dark-mode .profile__profile-bio > a {
+  color: #0fd8ff;
+}
+
+body.dark-mode .about-me {
+  border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode .about-me .about p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .about-me .about a {
+  color: #0fd8ff;
+}
+
+body.dark-mode .experience h1 {
+  color: #f5f5f5;
+}
+
+body.dark-mode .icon-container a i {
+  color: #f5f5f5;
+}
+
+body.dark-mode .icon-container a i:hover {
+  color: #0fd8ff;
+}
