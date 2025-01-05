@@ -15,18 +15,28 @@
 
 .loading-container {
   text-align: center;
-  width: 300px;
+  width: 350px;
   padding: 20px;
   background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
 .message {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
   font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Inter", serif;
+}
+
+.sub-message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: 'Verdana', sans-serif;
 }
 
 .progress-bar {
@@ -40,8 +50,9 @@
   overflow: hidden;
 }
 
+/* Progress bar filling */
 .progress {
-  background-color: #000;
+  background-color: #000; 
   width: 0%;
   height: 100%;
   border-radius: 5px;
