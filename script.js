@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const imageProfile = document.getElementById('image-profile');
   const toggleButton = document.getElementById('dark-mode-toggle');
   const darkModeIcon = document.getElementById('dark-mode-icon');
+  let scrollPosition = 0;
   const body = document.body;
+
+  
 
   document.body.style.overflowY = 'hidden';
   imageProfile.style.display = 'none';
@@ -16,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflowY = 'auto';
     imageProfile.style.display = 'block';
     toggleButton.style.display = 'block';
-  }, 4000);
+  }, 3000);
 
   toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
@@ -29,5 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
       darkModeIcon.classList.add('fa-sun');
     }
   });
+
+
+window.addEventListener('scroll', () => {
+  let currentPosition = window.scrollY;
+  console.log(currentPosition)
+  if (currentPosition > scrollPosition) {
+    body.classList.add('scrolling');
+  } else {
+    body.classList.remove('scrolling');
+  }
   
+  scrollPosition = currentPosition;
+});
 })

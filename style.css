@@ -7,16 +7,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", serif;
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #FBFBFB;
+  transform: perspective(2000px);
+}
+
+body.scrolling {
+  transition: transform 0.2s ease-in-out;
 }
 
 .app-container {
   display: block;
   width: 95%; 
   margin: 10px auto;
+  transition: transform 0.2s ease-in-out;
+
 }
 
 .profile {
