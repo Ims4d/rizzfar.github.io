@@ -25,7 +25,7 @@ body.dark-mode .about-me {
   border-bottom: 2px solid #ffffff;
 }
 
-body.dark-mode .about-me .about p {
+body.dark-mode .about-me .about article {
   color: #e0e0e0;
 }
 
