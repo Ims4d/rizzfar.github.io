@@ -1,0 +1,50 @@
+/* Mengatur tampilan pesan */
+.message-float {
+  display: none;
+}
+
+.message-float .icon-float {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.message-float .icon-float img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.message-float .description-float {
+  line-height: 1.5em;
+}
+
+@keyframes spinner {
+  0% {
+    border-color: rgb(192, 0, 192);
+  }
+  50% {
+    border-color: rgb(0, 255, 255);
+  }
+  100% {
+    border-color: rgb(192, 0, 192);
+  }
+}
+
+@media (min-width: 768px) {
+  .message-float {
+    border: 2px solid rgb(192, 0, 192);
+    background-color: rgb(234, 234, 234);
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 99;
+    animation: spinner 2s infinite linear; /* Menambahkan animasi spinner */
+  }
+}
