@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/logo.jpg">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <div class="loading-wrapper" id="loader">
@@ -38,23 +40,23 @@
       <i id="dark-mode-icon" class="fa-solid fa-sun dark-icon"></i>
     </button> 
 
-    <section class="profile" id="profile">
+    <header class="profile" id="profile">
       <div class="profile__profile-image" id="image-profile">
         <img src="img/rizuki.jpg" alt="Rizky Al Farid Hafizh" class="image-profile"/>
       </div>
       <div class="profile__profile-bio">
         <h1 class="name">Hello, I am Rizky Al Farid Hafizh. A <span>Frontend Developer</span> and <span>UI/UX Designer</span>.</h1>
         <p class="description">My passion for programming started in school and university, and I’ve continued coding ever since. In my free time, I love playing football and listening to music.</p>
-        <a href="#">Contact Me</a>
+        <a href="#footer">Contact Me</a>
       </div>
-    </section>
+    </header>
 
-    <section class="about-me" id="about">
+    <main class="about-me" id="about">
       <article class="about">
         <h1>About Me</h1>
-        <p>I am a Computer Science student at Universitas Komputer Indonesia (UNIKOM) Bandung with a strong interest in the world of programming. This interest stems from my curiosity and enthusiasm for finding solutions through code, while also creating creative and innovative ideas that can benefit many people.</p>
-        <p>Amid my busy college schedule, I make time to learn coding through platforms like Dicoding Indonesia, Skillvul, and Hackkerank. I also join coding scholarship programs to enhance my skills and gain more experience in programming, aligning with the standards of startup companies.</p>
-        <p>I’m also part of a programmer community in Bandung called the Bandung Coders Community. Being part of this group helps me expand my knowledge and build new connections. Occasionally, I also take on the role of a mentor, sharing what I’ve learned with others.</p>
+        <article>I am a Computer Science student at Universitas Komputer Indonesia (UNIKOM) Bandung with a strong interest in the world of programming. This interest stems from my curiosity and enthusiasm for finding solutions through code, while also creating creative and innovative ideas that can benefit many people.</article>
+        <article>Amid my busy college schedule, I make time to learn coding through platforms like Dicoding Indonesia, Skillvul, and Hackkerank. I also join coding scholarship programs to enhance my skills and gain more experience in programming, aligning with the standards of startup companies.</article>
+        <article>I’m also part of a programmer community in Bandung called the Bandung Coders Community. Being part of this group helps me expand my knowledge and build new connections. Occasionally, I also take on the role of a mentor, sharing what I’ve learned with others.</article>
         <a href="#">More About Me</a>
       </article>
 
@@ -102,19 +104,19 @@
           </a>
         </div>
       </aside>
-    </section>
+    </main>
 
     <section class="portfolio" id="portfolio">
       <div class="portfolio-header">
         <h1>Portfolio</h1>
         <div class="portfolio-description">
-          <p>Explore my latest UI/UX design and development projects. Feel free to browse through my work and learn more about each project.</p>
+          <p>Explore my latest UI/UX design and Explore my latest frontend development projects. Take a look!.</p>
           <a href="" class="all-projects">All projects</a>
         </div>
       </div>
       
       <div class="portfolio-item-container">
-        <div class="portfolio-item">
+        <div class="portfolio-item" data-aos="fade-up">
           <div class="project-details">
             <div class="project-logo">
               <img src="https://cdn-icons-png.flaticon.com/512/2636/2636315.png" alt="Techplus X Logo">
@@ -130,7 +132,7 @@
         </div>
     
         <div class="portfolio-second-container">
-          <div class="portfolio-item">
+          <div class="portfolio-item" data-aos="fade-up">
             <div class="project-details">
               <div class="project-logo">
                 <img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon.png" alt="DesignPro Logo">
@@ -145,7 +147,7 @@
             </div>
           </div>
       
-          <div class="portfolio-item">
+          <div class="portfolio-item" data-aos="fade-up">
             <div class="project-details">
               <div class="project-logo">
                 <img src="https://w7.pngwing.com/pngs/54/524/png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="AppHub Logo">

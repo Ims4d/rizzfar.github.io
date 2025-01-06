@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const darkModeIcon = document.getElementById('dark-mode-icon');
   const body = document.body;
 
-  
+  AOS.init();
 
   document.body.style.overflowY = 'hidden';
   imageProfile.style.display = 'none';
