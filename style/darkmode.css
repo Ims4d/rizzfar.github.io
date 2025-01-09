@@ -195,3 +195,7 @@ body.dark-mode .footer-container {
 body.dark-mode .footer-container .footer-logo p {
   color: #fff;
 }
+
+body.dark-mode .certification p {
+  color: white;
+}
