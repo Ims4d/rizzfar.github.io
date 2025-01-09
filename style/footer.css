@@ -17,6 +17,8 @@
   font-family: 'Arial', sans-serif;
   border-radius: 12px 12px 0 0;
   transition: all 0.3s ease;
+  border-top: 2px solid rgb(214, 212, 212);
+  margin-top: 30px;
 }
 
 .footer-container {
