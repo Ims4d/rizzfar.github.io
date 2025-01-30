@@ -101,11 +101,12 @@ body.dark-mode #info {
 
 body.dark-mode #result-word {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     max-width: 500px;
     margin: 20px auto;
     padding: 10px;
+    gap: 30px;
 }
 
 body.dark-mode #result-word a {
@@ -117,6 +118,7 @@ body.dark-mode #result-word a {
     padding: 8px;
     border-radius: 6px;
     transition: 0.3s ease-in-out;
+    width: max-content;
 }
 
 body.dark-mode #result-word a:hover {
@@ -164,7 +166,7 @@ body.dark-mode footer {
 
 @media screen and (max-width: 760px) {
     body.dark-mode #result-word {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        font-size: 0.9em;
+      grid-template-columns: 1fr 1fr;
+      font-size: 0.9em;
     }
 }

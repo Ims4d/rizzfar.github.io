@@ -94,33 +94,31 @@ button:hover {
     background: var(--button-hover);
 }
 
-/* Informasi */
 #info {
     margin-top: 15px;
     font-size: 1rem;
     color: #555;
 }
 
-/* Grid Anagram */
 #result-word {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     max-width: 500px;
     margin: 20px auto;
     padding: 10px;
+    justify-items: center;
 }
 
-/* Link Anagram */
 #result-word a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 600;
-    font-size: 1.3rem;
     background: rgba(0, 123, 255, 0.1);
     padding: 8px;
     border-radius: 6px;
     transition: 0.3s ease-in-out;
+    width: max-content;
 }
 
 #result-word a:hover {
@@ -168,9 +166,10 @@ footer {
 }
 
 /* Responsif */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
     #result-word {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        font-size: 0.9em;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
     }
 }
