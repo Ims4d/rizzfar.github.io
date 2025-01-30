@@ -42,6 +42,7 @@ const loadDictionary = async _ => {
 
 const findAnagram = async () => {
   const input = inputElement.value.toLowerCase().trim();
+  inputElement.value = '';
   if (!input) {
     infoElement.innerHTML = '<span style="color: red;">Masukkan kata terlebih dahulu!</span>';
     return;
@@ -72,7 +73,7 @@ const findAnagram = async () => {
 
 const displayResults = (words, anagrams) => {
   resultWordElement.innerHTML = [...words].map(e => {
-    return `<a href="#${e}" style="font-size:2em;color:black">${e}</a>&nbsp;&nbsp;&nbsp;`;
+    return `<a href="#${e}" style="font-size:2em;color:black">${e}</a>`;
   }).join('');
 
   const parser = new DOMParser();
@@ -81,3 +82,21 @@ const displayResults = (words, anagrams) => {
     return `<div id="${e.word}" style="margin-bottom: 1em"><h3 style="margin: 0; color: red">${e.word}</h3><span>${parsedHTML}</span></div>`;
   }).join('');
 };
+
+const toggleMode = () => {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+
+  const isDark = body.classList.contains("dark-mode");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+
+  document.querySelector(".toggle-mode").textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      document.querySelector(".toggle-mode").textContent = "☀️ Light Mode";
+  }
+});
+
